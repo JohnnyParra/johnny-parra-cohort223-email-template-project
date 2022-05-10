@@ -9,20 +9,24 @@
   <link rel="stylesheet" href="./email-template-project.css">
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid ps-0 pe-0 overflow-hidden"> <!-- remove padding and overflow-->
     <!-- 1st Row -->
-    <div class="row bg-light">
+    <div class="row">
       <!-- Navigation Bar -->
       <div class="col">
-        <nav class="navbar navbar-light">
+        <nav class="navbar navbar-expand-md sidebar navbar-light bg-light">
           <div class="container-fluid d-flex flex-nowrap">
+            <!-- connects left toggle button to sidebar -->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon btn-sm"></span>
+            </button>
             <a class="navbar-brand fs-2" href="#">MAIL</a>
             <form class="d-flex flex-grow-1"> <!--Search form grow -->
               <input class="form-control me-2" type="search" placeholder="Search Mail" aria-label="Search">
               <button class="btn btn-outline-primary me-2" type="submit">Search</button>
             </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon btn-sm"></span>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
@@ -57,14 +61,32 @@
         </nav>
       </div>
     </div>
+    <!-- 2nd row -->
     <div class="row">
-      <div class="col-12 col-none-1">
-        <ul>
-          <li>An item</li>
-          <li>another item</li>
-          <li>thrid item</li>
-          <li>last item</li>
-        </ul>
+      <div class="col-3">
+        <!-- collapsable sidebar -->
+        <nav class="collapse d-md-block sidebar bg-light" id="navbarToggleContent">
+          <div class="position-sticky">
+            <button type="button" class="btn btn-primary">Compose</button>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <span>inbox</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <span>Starred</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <span>Sent</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <span>Drafts</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <span>Junk</span>
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
