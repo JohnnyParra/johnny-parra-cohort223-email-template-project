@@ -1,4 +1,4 @@
-html, body{
+html,body{
     margin: 0;
     padding: 0;
 }
@@ -6,4 +6,18 @@ html, body{
 @media only screen and (max-width: 475px){
     .form-control{
     }
+}
+/* changes hamburger menu icon to three dots */
+#toggler-icon-change {
+    background-image: url(https://i.stack.imgur.com/qiyab.png)
+}
+
+.list-group a {
+    white-space: nowrap;
+}
+
+/* allows column to scroll without scrolling the page */
+.scrollable {
+    height: 92vh;
+    overflow-y: scroll;
 }
