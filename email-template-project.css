@@ -12,12 +12,16 @@ html,body{
     background-image: url(https://i.stack.imgur.com/qiyab.png)
 }
 
+.sidebar-button {
+    width: 110px;
+}
+
 .list-group a {
     white-space: nowrap;
 }
 
 /* allows column to scroll without scrolling the page */
 .scrollable {
-    height: 92vh;
+    height: 93vh;
     overflow-y: scroll;
 }
