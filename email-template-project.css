@@ -3,10 +3,6 @@ html,body{
     padding: 0;
 }
 
-@media only screen and (max-width: 475px){
-    .form-control{
-    }
-}
 /* changes hamburger menu icon to three dots */
 #toggler-icon-change {
     background-image: url(https://i.stack.imgur.com/qiyab.png)
@@ -16,6 +12,7 @@ html,body{
     width: 110px;
 }
 
+/* stops text in main content from wrapping when reaching edge of screen */
 .list-group a {
     white-space: nowrap;
 }
@@ -24,4 +21,14 @@ html,body{
 .scrollable {
     height: 93vh;
     overflow-y: scroll;
+}
+
+/* Displays sidebar over main content on small screen when toggled */
+@media only screen and (max-width: 767px) {
+    .sidebar-small {
+        position: fixed;
+        top: 68.5px;
+        left: 0px;
+        z-index: 10;
+    }
 }

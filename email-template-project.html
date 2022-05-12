@@ -12,6 +12,7 @@
   <div class="container-fluid ps-0 pe-0 overflow-hidden"> <!-- remove padding and overflow-->
     <!-- 1st Row -->
     <div class="row">
+      <!-- 1st column -->
       <!-- Navigation Bar -->
       <div class="col border-bottom border-dark">
         <nav class="navbar navbar-expand-md sidebar navbar-light bg-light">
@@ -20,6 +21,8 @@
             <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon btn-sm"></span>
             </button>
+            <!-- off canvas start -->
+            <!-- off canvas end -->
             <a class="navbar-brand fs-2" href="#">MAIL</a>
             <form class="d-flex flex-grow-1"> <!--Search form grow -->
               <input class="form-control me-2" type="search" placeholder="Search Mail" aria-label="Search">
@@ -65,12 +68,12 @@
     <div class="row">
       <!-- 1st Column -->
       <!-- collapsable sidebar -->
-      <div class="col-3 col-md-2 collapse d-md-block sidebar bg-light p-0" id="navbarToggleContent">
+      <div class="col-3 col-md-2 collapse d-md-block sidebar sidebar-small bg-light p-0" id="navbarToggleContent">
         <div class="position-sticky d-flex flex-column align-items-center mt-4">
           <button type="button" class="btn btn-primary sidebar-button ms-2">+ Compose</button>
           <div class="list-group mt-4 ps-2 w-100">
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-              <span>inbox</span>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple d-flex justify-content-between" aria-current="true">
+              <span>inbox</span> <span class="badge bg-primary rounded-pill">22</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
               <span>Starred</span>
@@ -78,8 +81,8 @@
             <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
               <span>Sent</span>
             </a>
-            <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-              <span>Drafts</span>
+            <a href="#" class="list-group-item list-group-item-action py-2 ripple d-flex justify-content-between" aria-current="true">
+              <span>Drafts</span> <span class="badge bg-primary rounded-pill">2</span>
             </a>
             <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
               <span>Junk</span>
@@ -88,6 +91,7 @@
         </div>
       </div>
       <!-- 2nd Column -->
+      <!-- main content area. most code is just repeated to show length on screen -->
       <div class="col-12 col-md-10 scrollable list-group">
         <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
@@ -181,6 +185,38 @@
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">List group item heading</h5>
             <small class="text-muted">4 days ago</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-muted">And some muted small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">4 days ago</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-muted">And some muted small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">YouTube TV</h5>
+            <small class="text-muted">4 days ago</small>
+          </div>
+          <p class="mb-1">HBO Max and Cinemax free preview and a Hallmark giveaway.</p>
+          <small class="text-muted">Plus Asian Pacific American Heritage Month picks.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">5 days ago</small>
+          </div>
+          <p class="mb-1">Some placeholder content in a paragraph.</p>
+          <small class="text-muted">And some muted small print.</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">List group item heading</h5>
+            <small class="text-muted">5 days ago</small>
           </div>
           <p class="mb-1">Some placeholder content in a paragraph.</p>
           <small class="text-muted">And some muted small print.</small>
