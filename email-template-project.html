@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./email-template-project.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-md sidebar navbar-light bg-light">
           <div class="container-fluid d-flex flex-nowrap">
             <!-- connects left toggle button to sidebar -->
-            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleContent" data-bs-auto-close="true" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon btn-sm"></span>
             </button>
             <!-- off canvas start -->
@@ -28,9 +28,6 @@
               <input class="form-control me-2" type="search" placeholder="Search Mail" aria-label="Search">
               <button class="btn btn-outline-primary me-2" type="submit">Search</button>
             </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span id="toggler-icon-change" class="navbar-toggler-icon btn-sm"></span>
-            </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mail Account</h5>
@@ -89,10 +86,28 @@
             </a>
           </div>
         </div>
+        <!-- sidebar account info on collapse -->
+        <div class="sidebar-account d-md-none d-flex flex-column align-items-center">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Manage My Account</a>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Settings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- 2nd Column -->
       <!-- main content area. most code is just repeated to show length on screen -->
-      <div class="col-12 col-md-10 scrollable list-group">
+      <div class="col scrollable list-group">
         <a href="#" class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">YouTube TV</h5>
@@ -227,6 +242,6 @@
 
   <!-- script for bootstrap -->
   <script>import bootstrap from bootstrap</script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
